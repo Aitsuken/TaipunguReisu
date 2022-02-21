@@ -1,0 +1,11 @@
+C:\Users\Clyde\source\repos\TaipinguReisu\TaipinguReisu\bin\Debug\TaipinguReisu.exe.config
+C:\Users\Clyde\source\repos\TaipinguReisu\TaipinguReisu\bin\Debug\TaipinguReisu.exe
+C:\Users\Clyde\source\repos\TaipinguReisu\TaipinguReisu\bin\Debug\TaipinguReisu.pdb
+C:\Users\Clyde\source\repos\TaipinguReisu\TaipinguReisu\obj\Debug\TaipinguReisu.csproj.AssemblyReference.cache
+C:\Users\Clyde\source\repos\TaipinguReisu\TaipinguReisu\obj\Debug\TaipinguReisu.Properties.Resources.resources
+C:\Users\Clyde\source\repos\TaipinguReisu\TaipinguReisu\obj\Debug\TaipinguReisu.csproj.GenerateResource.cache
+C:\Users\Clyde\source\repos\TaipinguReisu\TaipinguReisu\obj\Debug\TaipinguReisu.csproj.CoreCompileInputs.cache
+C:\Users\Clyde\source\repos\TaipinguReisu\TaipinguReisu\obj\Debug\TaipinguReisu.exe
+C:\Users\Clyde\source\repos\TaipinguReisu\TaipinguReisu\obj\Debug\TaipinguReisu.pdb
+C:\Users\Clyde\source\repos\TaipinguReisu\TaipinguReisu\obj\Debug\TaipinguReisu.Game.resources
+C:\Users\Clyde\source\repos\TaipinguReisu\TaipinguReisu\obj\Debug\TaipinguReisu.GameMenu.resources
