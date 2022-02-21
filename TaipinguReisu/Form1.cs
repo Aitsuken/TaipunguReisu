@@ -81,7 +81,7 @@ namespace TaipinguReisu
             tokensScore = 0;
 
             roadSpeed = 13;
-            rndCarsSpeed = 3;
+            rndCarsSpeed = 6;
             rndCar1.Top = rndCar.Next(0, 100) * 1;
             rndCar1.Left = rndCar.Next(35, 200);
 
@@ -205,13 +205,13 @@ rndCar3.Bounds.IntersectsWith(rndCar4.Bounds))
             if (score > 1500)
             {
                 roadSpeed = 25;
-                rndCarsSpeed = 18;
+                rndCarsSpeed = 20;
             }
 
             if(score > 2500)
             {
                 roadSpeed = 35;
-                rndCarsSpeed = 20;
+                rndCarsSpeed = 30;
             }
         }
 
