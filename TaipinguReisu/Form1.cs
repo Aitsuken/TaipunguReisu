@@ -15,7 +15,7 @@ namespace TaipinguReisu
     public partial class Game : Form
     {
 
-
+        int time = 0;
         int roadSpeed = 12;
         int rndCarsSpeed = 3;
 
@@ -49,12 +49,14 @@ namespace TaipinguReisu
 
         private void resetGame()
         {
-            textScore.Visible = false;
+            //textScore.Visible = false;
             geemuObaText.Visible = false;
             btnStart.Visible = false;
             token.Visible = true;
             //musicSnd.Stop();
             deathS.Stop();
+            timeText.Text = "Time: 0:0.00";
+            time = 0;
 
             //play music
 
@@ -102,8 +104,12 @@ namespace TaipinguReisu
         {
             
             score++;
-
-            if(goleft == true && player.Left > 30)
+            time += 5;
+            int nowTime = time;
+            timeText.Text = "Time: " + Convert.ToString(nowTime / 6000) + 
+                ":" + Convert.ToString(nowTime % 360000 % 6000 / 100) + ":" + Convert.ToString(nowTime % 100 / 10);
+            textScore.Text = "Score: " + (score + tokensScore);
+            if (goleft == true && player.Left > 30)
             {
                 player.Left -= playerSpeed;
             }
@@ -196,7 +202,7 @@ rndCar3.Bounds.IntersectsWith(rndCar4.Bounds))
                 ChangeToken(token);
             }
 
-            if(score > 500)
+            if(score > 200)
             {
                 roadSpeed = 20;
                 rndCarsSpeed = 14;
@@ -217,11 +223,11 @@ rndCar3.Bounds.IntersectsWith(rndCar4.Bounds))
 
         private void gameOver()
         {
+        
             deathS.Play();
             token.Visible = false;
-            score += tokensScore;
-            textScore.Text = "Score: " + score;
-            textScore.Visible = true;
+            
+            //textScore.Visible = true;
             geemuObaText.Visible = true;
             btnStart.Visible = true;
             //deathS.SoundLocation = "Sound.wav";
@@ -229,9 +235,10 @@ rndCar3.Bounds.IntersectsWith(rndCar4.Bounds))
 
             gameTimer.Stop();
             explosion.Visible = true;
-            player.Controls.Add(explosion);
-            explosion.Location = new Point(4, -15);
             explosion.BackColor = Color.Transparent;
+            //player.Controls.Add(explosion);
+            explosion.Location = new Point(player.Location.X, player.Location.Y - 40);
+            
             btnStart.Enabled = true;
         }
 
@@ -299,6 +306,15 @@ rndCar3.Bounds.IntersectsWith(rndCar4.Bounds))
 
         }
 
+        private void tryAgainHover(object sender, EventArgs e)
+        {
+            btnStart.ForeColor = Color.Yellow;
+        }
+
+        private void tryAgainHoverLeave(object sender, EventArgs e)
+        {
+            btnStart.ForeColor = Color.Black;
+        }
 
         private void isKeyup(object sender, KeyEventArgs e)
         {

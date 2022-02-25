@@ -142,6 +142,9 @@
   <data name="ae86" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\src\img\pureya\ae86.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="diamond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\src\img\diamond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="InitialD_Dejavu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\src\music\InitialD_Dejavu.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -150,6 +153,9 @@
   </data>
   <data name="button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\src\img\button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deathsnd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\src\sounds\death.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="blackCar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\src\img\cars\blackCar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,22 +169,19 @@
   <data name="roadTrack2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\src\img\roadTrack2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\src\img\menu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="blackCar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\src\img\cars\blackCar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="roadtrack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\src\img\roadtrack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\src\img\menu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="whiteCar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\src\img\cars\whiteCar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="deathsnd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\src\sounds\death.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="diamond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\src\img\diamond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="geemuoba" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\src\img\geemuoba.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

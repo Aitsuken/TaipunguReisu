@@ -161,6 +161,16 @@ namespace TaipinguReisu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap geemuoba {
+            get {
+                object obj = ResourceManager.GetObject("geemuoba", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap grayCar {
             get {
                 object obj = ResourceManager.GetObject("grayCar", resourceCulture);
