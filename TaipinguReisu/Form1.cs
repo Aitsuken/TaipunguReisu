@@ -107,7 +107,7 @@ namespace TaipinguReisu
             time += 5;
             int nowTime = time;
             timeText.Text = "Time: " + Convert.ToString(nowTime / 6000) + 
-                ":" + Convert.ToString(nowTime % 360000 % 6000 / 100) + ":" + Convert.ToString(nowTime % 100 / 10);
+                ":" + Convert.ToString(nowTime % 360000 % 6000 / 100) + "." + Convert.ToString(nowTime % 100 / 10);
             textScore.Text = "Score: " + (score + tokensScore);
             if (goleft == true && player.Left > 30)
             {

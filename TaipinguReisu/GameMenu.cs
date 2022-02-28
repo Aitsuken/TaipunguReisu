@@ -89,7 +89,11 @@ namespace TaipinguReisu
         private void startButton_Click(object sender, EventArgs e)
         {
             Game geemu = new Game();
-            geemu.ShowDialog();
+            geemu.Show();
+            /*            Game form = new Game();
+                        form.TopLevel = false;
+                        this.Controls.Add(form);
+                        form.Show();*/
         }
     }
 }

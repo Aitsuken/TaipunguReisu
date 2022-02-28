@@ -35,29 +35,29 @@ namespace TaipinguReisu
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             this.gamePanel1 = new System.Windows.Forms.Panel();
-            this.token = new System.Windows.Forms.PictureBox();
+            this.rndCar1 = new System.Windows.Forms.PictureBox();
             this.textScore = new System.Windows.Forms.Label();
+            this.timeText = new System.Windows.Forms.Label();
             this.geemuObaText = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
+            this.explosion = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.token = new System.Windows.Forms.PictureBox();
             this.rndCar4 = new System.Windows.Forms.PictureBox();
             this.rndCar3 = new System.Windows.Forms.PictureBox();
             this.rndCar2 = new System.Windows.Forms.PictureBox();
-            this.rndCar1 = new System.Windows.Forms.PictureBox();
-            this.explosion = new System.Windows.Forms.PictureBox();
             this.player = new System.Windows.Forms.PictureBox();
             this.roadTrack = new System.Windows.Forms.PictureBox();
             this.roadTrack2 = new System.Windows.Forms.PictureBox();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.bgImage = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.timeText = new System.Windows.Forms.Label();
             this.gamePanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rndCar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.explosion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.token)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rndCar4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rndCar3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rndCar2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rndCar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.explosion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roadTrack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roadTrack2)).BeginInit();
@@ -67,11 +67,11 @@ namespace TaipinguReisu
             // gamePanel1
             // 
             this.gamePanel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.gamePanel1.Controls.Add(this.geemuObaText);
+            this.gamePanel1.Controls.Add(this.btnStart);
             this.gamePanel1.Controls.Add(this.rndCar1);
             this.gamePanel1.Controls.Add(this.textScore);
             this.gamePanel1.Controls.Add(this.timeText);
-            this.gamePanel1.Controls.Add(this.geemuObaText);
-            this.gamePanel1.Controls.Add(this.btnStart);
             this.gamePanel1.Controls.Add(this.explosion);
             this.gamePanel1.Controls.Add(this.label1);
             this.gamePanel1.Controls.Add(this.token);
@@ -86,16 +86,15 @@ namespace TaipinguReisu
             this.gamePanel1.Size = new System.Drawing.Size(600, 672);
             this.gamePanel1.TabIndex = 0;
             // 
-            // token
+            // rndCar1
             // 
-            this.token.BackColor = System.Drawing.Color.Transparent;
-            this.token.Image = global::TaipinguReisu.Properties.Resources.diamond;
-            this.token.Location = new System.Drawing.Point(59, 118);
-            this.token.Name = "token";
-            this.token.Size = new System.Drawing.Size(52, 50);
-            this.token.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.token.TabIndex = 10;
-            this.token.TabStop = false;
+            this.rndCar1.Image = global::TaipinguReisu.Properties.Resources.blackCar;
+            this.rndCar1.Location = new System.Drawing.Point(59, 230);
+            this.rndCar1.Name = "rndCar1";
+            this.rndCar1.Size = new System.Drawing.Size(46, 90);
+            this.rndCar1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rndCar1.TabIndex = 6;
+            this.rndCar1.TabStop = false;
             // 
             // textScore
             // 
@@ -107,6 +106,18 @@ namespace TaipinguReisu
             this.textScore.Size = new System.Drawing.Size(120, 32);
             this.textScore.TabIndex = 2;
             this.textScore.Text = "Score: 0";
+            // 
+            // timeText
+            // 
+            this.timeText.AutoSize = true;
+            this.timeText.BackColor = System.Drawing.Color.Transparent;
+            this.timeText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.timeText.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.timeText.Location = new System.Drawing.Point(318, 8);
+            this.timeText.Name = "timeText";
+            this.timeText.Size = new System.Drawing.Size(154, 29);
+            this.timeText.TabIndex = 12;
+            this.timeText.Text = "Time: 0:0.00";
             // 
             // geemuObaText
             // 
@@ -134,6 +145,38 @@ namespace TaipinguReisu
             this.btnStart.Click += new System.EventHandler(this.restart);
             this.btnStart.MouseEnter += new System.EventHandler(this.tryAgainHover);
             this.btnStart.MouseLeave += new System.EventHandler(this.tryAgainHoverLeave);
+            // 
+            // explosion
+            // 
+            this.explosion.BackColor = System.Drawing.Color.Transparent;
+            this.explosion.Image = global::TaipinguReisu.Properties.Resources.boom;
+            this.explosion.Location = new System.Drawing.Point(342, 379);
+            this.explosion.Name = "explosion";
+            this.explosion.Size = new System.Drawing.Size(89, 111);
+            this.explosion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.explosion.TabIndex = 5;
+            this.explosion.TabStop = false;
+            this.explosion.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "label1";
+            // 
+            // token
+            // 
+            this.token.BackColor = System.Drawing.Color.Transparent;
+            this.token.Image = global::TaipinguReisu.Properties.Resources.diamond;
+            this.token.Location = new System.Drawing.Point(59, 118);
+            this.token.Name = "token";
+            this.token.Size = new System.Drawing.Size(52, 50);
+            this.token.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.token.TabIndex = 10;
+            this.token.TabStop = false;
             // 
             // rndCar4
             // 
@@ -165,28 +208,6 @@ namespace TaipinguReisu
             this.rndCar2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.rndCar2.TabIndex = 7;
             this.rndCar2.TabStop = false;
-            // 
-            // rndCar1
-            // 
-            this.rndCar1.Image = global::TaipinguReisu.Properties.Resources.blackCar;
-            this.rndCar1.Location = new System.Drawing.Point(59, 230);
-            this.rndCar1.Name = "rndCar1";
-            this.rndCar1.Size = new System.Drawing.Size(46, 90);
-            this.rndCar1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.rndCar1.TabIndex = 6;
-            this.rndCar1.TabStop = false;
-            // 
-            // explosion
-            // 
-            this.explosion.BackColor = System.Drawing.Color.Transparent;
-            this.explosion.Image = global::TaipinguReisu.Properties.Resources.boom;
-            this.explosion.Location = new System.Drawing.Point(342, 379);
-            this.explosion.Name = "explosion";
-            this.explosion.Size = new System.Drawing.Size(89, 111);
-            this.explosion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.explosion.TabIndex = 5;
-            this.explosion.TabStop = false;
-            this.explosion.Visible = false;
             // 
             // player
             // 
@@ -236,27 +257,6 @@ namespace TaipinguReisu
             this.bgImage.TabIndex = 4;
             this.bgImage.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "label1";
-            // 
-            // timeText
-            // 
-            this.timeText.AutoSize = true;
-            this.timeText.BackColor = System.Drawing.Color.Transparent;
-            this.timeText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.timeText.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.timeText.Location = new System.Drawing.Point(318, 8);
-            this.timeText.Name = "timeText";
-            this.timeText.Size = new System.Drawing.Size(154, 29);
-            this.timeText.TabIndex = 12;
-            this.timeText.Text = "Time: 0:0.00";
-            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -272,12 +272,12 @@ namespace TaipinguReisu
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.isKeyup);
             this.gamePanel1.ResumeLayout(false);
             this.gamePanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rndCar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.explosion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.token)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rndCar4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rndCar3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rndCar2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rndCar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.explosion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roadTrack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roadTrack2)).EndInit();
